@@ -1,4 +1,4 @@
-# == Class: openvpn
+# == Class: role_openvpn
 #
 # Full description of class openvpn here.
 #
@@ -35,7 +35,7 @@
 #
 # Copyright 2016 Your name here, unless otherwise noted.
 #
-class openvpn 
+class role_openvpn (
   $auth_user_pass_hash,
   $openvpn_client_hash
 ) {

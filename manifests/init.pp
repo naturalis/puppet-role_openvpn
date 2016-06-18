@@ -36,8 +36,8 @@
 # Copyright 2016 Your name here, unless otherwise noted.
 #
 class openvpn 
-  $openvpn_client_hash,
-  $file_hash
+  $auth_user_pass_hash,
+  $openvpn_client_hash
 ) {
   class { 'role_openvpn::auth_user_pass': } ->
   class { 'role_openvpn::client': }

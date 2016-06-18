@@ -39,7 +39,7 @@ class openvpn
   $openvpn_client_hash,
   $file_hash
 ) {
-
+  class { 'role_openvpn::auth_user_pass': } ->
   class { 'role_openvpn::client': }
 
 }

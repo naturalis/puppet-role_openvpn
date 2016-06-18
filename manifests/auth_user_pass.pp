@@ -2,6 +2,7 @@
 #
 class role_openvpn::auth_user_pass {
 
-  create_resources( 'file', $role_openvpn::auth_user_pass_hash )
+  create_resources( 'file', $role_openvpn::auth_user_pass_hash ) ~>
+  Service[$::openvpn_client::service_name]
   
 }

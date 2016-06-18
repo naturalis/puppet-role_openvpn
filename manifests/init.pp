@@ -35,7 +35,10 @@
 #
 # Copyright 2016 Your name here, unless otherwise noted.
 #
-class openvpn {
+class openvpn 
+  $openvpn_client_hash,
+) {
 
+  class { 'role_openvpn::client': }
 
 }
